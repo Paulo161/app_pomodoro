@@ -19,3 +19,21 @@ class LoginButtonPressed extends LoginEvent {
   @override
   String toString() => 'LoginButtonPressed { email: $email, password: $password }';
 }
+
+class RegisterButtonPressed extends LoginEvent {
+  final String name;
+  final String email;
+  final String password;
+
+  const RegisterButtonPressed({
+    required this.name,
+    required this.email,
+    required this.password,
+  });
+
+  @override
+  List<Object> get props => [name, email, password];
+
+  @override
+  String toString() => 'RegisterButtonPressed { name: $name, email: $email }';
+}

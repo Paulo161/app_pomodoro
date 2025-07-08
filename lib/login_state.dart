@@ -13,6 +13,8 @@ class LoginLoading extends LoginState {}
 
 class LoginSuccess extends LoginState {}
 
+class RegisterSuccess extends LoginState {}
+
 class LoginFailure extends LoginState {
   final String error;
 
